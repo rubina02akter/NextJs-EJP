@@ -6,10 +6,15 @@ const BlogDetails = async ({ params }) => {
   const post = await res.json();
 
   return (
-    <div className="p-4 w-3/5 mx-auto mt-5 bg-slate-300 rounded-md">
-      <h1 className="text-2xl font-bold">{post.title}</h1>
-      <p className="mt-2">{post.body}</p>
+    <div className="flex justify-center items-center mt-8">
+    <div className="p-6 w-full max-w-lg bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <h1 className="text-3xl font-bold text-gray-800 mb-4 border-b pb-2">
+        {post.title}
+      </h1>
+      <p className="text-gray-600 leading-relaxed">{post.body}</p>
     </div>
+  </div>
+  
   );
 };
 

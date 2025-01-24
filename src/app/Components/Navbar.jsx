@@ -29,7 +29,7 @@ const Navbar = async () => {
 
 
   return (
-   <section className="bg-gray-200">
+   <section className="text-white  bg-opacity-40 bg-[#152c54]">
      <div className="navbar  container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
@@ -51,12 +51,12 @@ const Navbar = async () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content shadow bg-blue-900 rounded-box z-[1] mt-3 w-52 p-2"
           >
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl font-bold text-red-500">BLOG__GER</a>
+        <a className=" text-2xl font-extrabold"><span className='text-blue-900'>Blog</span>_<span className='text-blue-900'>Scape</span></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
