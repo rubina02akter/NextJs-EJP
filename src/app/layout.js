@@ -25,10 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} container  mx-auto antialiased`}
       >
         <div className="border-b-2 ">
-          <div className="">
-            <p className="text-xl font-bold">Practice NextJs</p>
-            <p>Fade Data</p>
-          </div>
+          
           <Navbar></Navbar>
         </div>
        <AuthProvider>
